@@ -1,0 +1,76 @@
+<div class="container">
+  <div class="row justify-content-md-center">
+      <div class="col-md-4 col-md-offset-1">
+
+          <div class="form-box" style="margin-top: 20px;">
+              <h1 class="text-center font-color">Book Test Drive</h1>
+              <form action="">
+                  <div class="form-group">
+                      <label for="firstName">Firstname</label>
+                      <input [(ngModel)]="userData.firstName" class="form-control" id="firstName" type="text"
+                          name="firstName">
+                  </div>
+
+                  <div  class="form-group" style="margin-top: 10px; margin-bottom: 10px;">
+                      <label for="lastName">Lastname</label>
+                      <input [(ngModel)]="userData.lastName" class="form-control" id="lastName" type="text"
+                          name="lastName">
+                  </div>
+
+                  <div class="form-group">
+                      <label for="email">Email</label>
+                      <input [(ngModel)]="userData.email" class="form-control" id="email" type="email" name="Email">
+                  </div>
+
+
+                  <div class="form-group" style="margin-top: 10px; margin-bottom: 10px;">
+                    <label for="name">Pick a Date for drive</label>
+                    <input [(ngModel)]="userData.dob" class="form-control" id="dob" type="date" name="dob">
+                </div>
+
+                <div class="form-group" style="margin-top: 10px; margin-bottom: 10px;">
+                  <label for="name">Model</label>
+                  <input [(ngModel)]="userData.model" class="form-control" id="dob" type="text" name="dob">
+              </div>
+
+              <div class="form-group" style="margin-top: 10px; margin-bottom: 10px;">
+                <label for="name">State</label>
+                <input [(ngModel)]="userData.state" class="form-control" id="dob" type="text" name="dob">
+            </div>
+
+            <div class="form-group" style="margin-top: 10px; margin-bottom: 10px;">
+              <label for="name">Occupation</label>
+              <input [(ngModel)]="userData.occupation" class="form-control" id="dob" type="text" name="dob">
+          </div>
+
+                  <button [routerLink]="['/home']" (click)="submitButtonClicked()" class="btn btn-primary submit-button" style="margin-top: 5px;"
+                      type="submit">Submit</button>
+              </form>
+          </div>
+      </div>
+      <div class="col-md-1"></div>
+      <br>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
